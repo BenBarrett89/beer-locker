@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/BenBarrett89/beer-locker/issues"
   },
-  "homepage": "https://github.com/BenBarrett89/beer-locker#readme"
+  "homepage": "https://github.com/BenBarrett89/beer-locker#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
