@@ -1,0 +1,19 @@
+{
+  "name": "beer-locker",
+  "version": "1.0.0",
+  "description": "My attempt at the beer locker tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenBarrett89/beer-locker.git"
+  },
+  "author": "BenBarrett89 (typing out the Scott Smith tutorial)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenBarrett89/beer-locker/issues"
+  },
+  "homepage": "https://github.com/BenBarrett89/beer-locker#readme"
+}

@@ -1,2 +1,2 @@
 # beer-locker
-Mt attempt at the beer locker tutorial
+My attempt at the beer locker tutorial
