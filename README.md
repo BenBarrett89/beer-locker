@@ -55,8 +55,10 @@ It will then be available at http://localhost:3000/api
 ## Built With
 
 ### Production
-* [Node.js](https://nodejs.org/en/) - The server side framework
-* [Express](http://expressjs.com/) - The web application framework
+* [Node.js](https://nodejs.org/en/) - Server side framework
+* [Express](http://expressjs.com/) - Web application framework
+* [Mongoose](http://mongoosejs.com/) - MongoDB object modeling
+* [Body Parser](https://github.com/expressjs/body-parser) - Express body parser
 
 ### Development
 * [Chai](http://chaijs.com/) - For assertions in testing
