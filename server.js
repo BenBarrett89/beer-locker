@@ -60,6 +60,20 @@ beersRoute.get(function(req, res) {
   })
 })
 
+// Create a new route with the /beers/:beer_id prefix
+var beerRoute = router.route('/beers/:beer_id');
+
+// Create endpoint /api/beers/:beer_id for GET
+beerRoute.get(function(req, res) {
+  // Use the Beer model to find a specific beer
+  Beer.findById(req.params.beer_id, function(err, beer) {
+    if (err)
+      res.send(err)
+
+    res.json(beer)
+  })
+})
+
 // Register all our routes with /api
 app.use('/api', router)
 
