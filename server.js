@@ -49,6 +49,17 @@ beersRoute.post(function(req, res) {
   })
 })
 
+// Create endpoint /api/beers for GET
+beersRoute.get(function(req, res) {
+  // Use the Beer model to find all beer
+  Beer.find(function(err, beers) {
+    if (err)
+      res.send(err);
+
+    res.json(beers);
+  })
+})
+
 // Register all our routes with /api
 app.use('/api', router)
 
