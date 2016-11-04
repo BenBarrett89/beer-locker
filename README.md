@@ -54,8 +54,12 @@ It will then be available at http://localhost:3000/api
 
 ## Built With
 
+### Production
 * [Node.js](https://nodejs.org/en/) - The server side framework
 * [Express](http://expressjs.com/) - The web application framework
+
+### Development
+* [Chai](http://chaijs.com/) - For assertions in testing
 
 ## Contributing
 
