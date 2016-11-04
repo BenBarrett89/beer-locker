@@ -74,6 +74,26 @@ beerRoute.get(function(req, res) {
   })
 })
 
+// Create endpoint /api/beers/:beer_id for PUT
+beerRoute.put(function(req, res) {
+  // Use the Beer model to find a specific beer
+  Beer.findById(req.params.beer_id, function(err, beer) {
+    if (err)
+      res.send(err)
+
+    // Update the existing beer quantity
+    beer.quantity = req.body.quantity
+
+    // Save the beer and check for errors
+    beer.save(function(err) {
+      if (err)
+        res.send(err)
+
+      res.json(beer)
+    })
+  })
+})
+
 // Register all our routes with /api
 app.use('/api', router)
 
