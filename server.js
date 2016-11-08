@@ -1,5 +1,6 @@
 // Get the packages we need
 var express = require('express')
+var session = require('express-session')
 var mongoose = require('mongoose')
 var bodyParser = require('body-parser')
 var passport = require('passport')
@@ -23,6 +24,13 @@ app.set('view engine', 'ejs');
 // Use the body-parser package in our application
 app.use(bodyParser.urlencoded({
   extended: true
+}))
+
+// Use express session support since OAuth2orize requires it
+app.use(session({
+  secret: 'Super Secret Session Key',
+  saveUninitialized: true,
+  resave: true
 }))
 
 // Use the passport package in our application
