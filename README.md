@@ -61,6 +61,7 @@ It will then be available at http://localhost:3000/api
 * [Body Parser](https://github.com/expressjs/body-parser) - Express body parser
 * [BCrypt-Nodejs](https://www.npmjs.com/package/bcrypt-nodejs) - Password hashing
 * [Passport](http://passportjs.org/) - Authentication
+* [OAuth2orize](https://github.com/jaredhanson/oauth2orize) - OAuth2 Authentication
 
 ### Development
 * [Chai](http://chaijs.com/) - For assertions in testing
